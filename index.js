@@ -33,6 +33,6 @@ app.use('/profile', profile);
 app.use('/select', select);
 app.use('/logout', logout);
 
-// http.listen('4200', function(){
-//     console.log(`listening on port: 4200`);
-// });
+http.listen('4200', function(){
+    console.log(`listening on port: 4200`);
+});
