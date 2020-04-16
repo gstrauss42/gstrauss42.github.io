@@ -1,0 +1,39 @@
+html
+  head
+    meta(charset='UTF-8')
+    link(rel='stylesheet', type='text/css', href='login.css')
+  body
+    .main
+      .login
+        .text
+          | Login
+        form(action='login', method='post')
+          input._elem(type='text', placeholder='username', name='username', required='')
+          input._elem(type='password', placeholder='Password', name='password', required='')
+          button.button(type='submit') Login
+
+
+
+
+<!-- <html>
+  <head>
+    <meta charset = "UTF-8">
+    <link rel = "stylesheet" type = "text/css" href = "login.css" />
+  </head>
+  <body>
+
+
+
+<div class = "main">
+    <div class="login"> 
+        <form action="login" method="post">
+            <input class = "_elem" type="text" placeholder="Email" name="email" required>
+            <input class = "_elem" type="password" placeholder="Password" name="password" required>
+            <button class = "_elem" type="submit">Login</button>
+        </form>
+    </div>
+</div>
+
+
+</body>
+</html> -->

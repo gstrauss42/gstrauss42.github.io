@@ -1,0 +1,45 @@
+//- <html>
+//-   <head>
+//-     <meta charset = "UTF-8">
+//-     <link rel = "stylesheet" type = "text/css" href = "create.css" />
+//-   </head>
+//-   <body>
+//-     <!-- login inject -->
+//-     <div class="box">
+//-       <div>
+//-         Create account
+//-       </div>
+//-       <form action="create" method="post">
+//-         <input class= "_elem" type="text" name="name" placeholder="name">
+//-         <input class = "_elem" type="text" name="surname" placeholder="surname">
+//-         <input class = "_elem" type="text" name="username" placeholder="username">
+//-         <input class = "_elem" type="text" placeholder="Email" name="email" required>
+//-         <input class = "_elem" type="password" placeholder="Password" name="password" required>
+//-         <input class = "_elem" type="password" placeholder="Repeat Password" name="re-password" required>
+//-         <button class = "_elem" type="submit">create account</button>
+//-       </form>
+//-     </div>
+//-     <!--  -->
+//-   </body>
+//- </html>
+
+
+
+html
+  head
+    meta(charset='UTF-8')
+    link(rel='stylesheet', type='text/css', href='create.css')
+  body
+    // login inject
+    .box
+      div
+        | Create Account
+      form(action='create', method='post')
+        input._elem(type='text', name='name', placeholder='name')
+        input._elem(type='text', name='surname', placeholder='surname')
+        input._elem(type='text', name='username', placeholder='username')
+        input._elem(type='text', placeholder='Email', name='email', required='')
+        input._elem(type='password', placeholder='Password', name='password', required='')
+        input._elem(type='password', placeholder='Repeat Password', name='re-password', required='')
+        button.button(type='submit') create account
+    // 

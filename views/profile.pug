@@ -1,0 +1,32 @@
+html
+  head
+    meta(charset='UTF-8')
+    link(rel='stylesheet', type='text/css', href='profile.css')
+  body
+    .main
+      .header
+        .username #{username}
+        form(action='logout', method='post')
+          button.logout Logout
+      .body
+        .block
+        .image
+          img.profile_photo(src= `data:image/*;base64,${profile_pic}`)
+
+          form(action='upload_photo', method='post', enctype='multipart/form-data')
+            input(type='file', name='picture', accept='image/*')
+            button(type='submit', name='save') upload
+        .block
+        .field
+          form.form(action='profile', method='post')
+            .block #{field1}
+            input._elem(name='field1', type='text', placeholder='add or edit info')
+            button.submit Update
+          form.form(action='profile', method='post')
+            .block #{field2}
+            input._elem(name='field2', type='text', placeholder='add or edit info')
+            button.submit Update
+          form.form(action='profile', method='post')
+            .block #{field3}
+            input._elem(name='field3', type='text', placeholder='add or edit info')
+            button.submit Update
