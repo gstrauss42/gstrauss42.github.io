@@ -39,10 +39,10 @@ var models = require("./models/models");
 // app.use('/select', select);
 // app.use('/logout', logout);
 
-http.listen('4200', function(){
-    console.log(`listening on port: 4200`);
+const PORT = process.env.PORT || 3000;
+app.listen(PORT, () => {
+    console.log(`listening on port ${ PORT }`);
 });
-
 
 
 
