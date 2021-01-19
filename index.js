@@ -20,7 +20,7 @@ var index = require('./backend/index.js');
 var create = require('./backend/create.js');
 var login = require('./backend/login.js');
 var profile = require('./backend/profile.js');
-// var upload_photo = require('./backend/upload_photo');
+var upload_photo = require('./backend/upload_photo');
 var select = require('./backend/select.js');
 var logout = require('./backend/logout.js');
 
@@ -29,7 +29,7 @@ app.use('/', index);
 app.use('/create', create);
 app.use('/login', login);
 app.use('/profile', profile);
-// app.use('/upload_photo', upload_photo);
+app.use('/upload_photo', upload_photo);
 app.use('/select', select);
 app.use('/logout', logout);
 
